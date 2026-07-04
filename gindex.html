@@ -180,14 +180,14 @@
     }
 
     // 🌟 Function to toggle Chiang Mai images (အသစ်ထည့်ထားသည်)
-    function switchChiangMai() {
+   function switchChiangMai() {
       let img = document.getElementById("chiangmaiImg");
       let state = img.getAttribute("data-state");
       if (state === "1") {
-        img.src = "chiangmai2.jpg";
+        img.src = "chiangmai2.jpg"; /* 👈 chiangmai2 (စာလုံးအသေး) ဖြစ်ရပါမယ် */
         img.setAttribute("data-state", "2");
       } else {
-        img.src = "chiangmai1.jpg";
+        img.src = "chiangmai1.jpg"; /* 👈 chiangmai1 (စာလုံးအသေး) ဖြစ်ရပါမယ် */
         img.setAttribute("data-state", "1");
       }
     }
