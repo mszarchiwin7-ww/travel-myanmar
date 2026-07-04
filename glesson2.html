@@ -1,0 +1,82 @@
+<html>
+	<head>
+  <style>
+    body {
+      background-color: #2c3e50; 
+      color: #ecf0f1;            
+      font-family: sans-serif; 
+		display: flex;
+      flex-direction: column; /* အရာအားလုံးကို အပေါ်အောက် တန်းစီစေချင်လို့ */
+      align-items: center;    /* အရာအားလုံးကို ဘယ်ညာရဲ့ အလယ်တည့်တည့်ကို ပို့ပေးတာ */
+      padding: 40px;
+    }
+
+    h1 {
+      color: #f1c40f;            
+    }
+
+    li {
+      color: yellow; 
+		transition: 0.3s;
+    }
+		li:hover {
+      color: #1abc9c; /* Changes to a beautiful turquoise on hover */
+      transform: scale(1.1); /* Makes the text slightly bigger */
+    }
+
+    p {
+      background-color: #34495e;
+      color: #ecf0f1;        
+      padding: 15px; 
+      margin: 8px;  
+      border: 3px solid #e74c3c; 
+      border-radius: 8px;  
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    img {
+      display: block;       /* 🌟 THIS FIXES THE PROBLEM! Turns it into a solid block object */
+      margin-top: 20px;     /* Adds some space above the picture so it's not squished */
+      border-radius: 12px; 
+      transition: transform 0.5s, box-shadow 0.5s; /* Smooths out both tilt AND shadow */
+    }
+    
+    img:hover {
+      transform: rotate(3deg) scale(1.05); 
+      box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5); /* 🌟 Now the shadow will beautifully appear on hover! */
+    }
+	button {
+      background-color: #e74c3c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover { background-color: #c0392b; }
+  </style>
+</head>
+	<body>
+<h1> My solo travel </h1>
+<p> I love beautiful places </p>
+<h1>My Dream Travel Destinations</h1>
+<p>I love exploring new places and experiencing different cultures.</p>
+	<button id="myButton">လျှို့ဝှက်ချက်ကို နှိပ်ကြည့်ပါ</button>
+<ul>
+  <li>Chiang Mai</li>
+  <li>Swiss</li>
+  <li>US</li>
+</ul>
+	<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="Mountains" style="width: 400px;">
+	<script>
+	let myName = "Zar Chi Win";
+    alert("Welcome to " +  myName  + "'s travel website! 🌍");
+	document.getElementById("myButton").onclick = function() {
+      alert("I will travel to Japan next month 🇯🇵✈️");
+    };
+	
+  </script>
+	</body>
+</html>
