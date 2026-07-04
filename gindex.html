@@ -21,7 +21,7 @@
     h1 { color: #f1c40f; margin-top: 40px; }
     h2 { color: #f1c40f; margin-top: 40px; }
     .card-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
-.card {
+    .card {
       background-color: #34495e; border: 2px solid #e74c3c; border-radius: 10px;
       padding: 0px; 
       width: 280px; /* 👈 Increased width from 200px to 280px so photos look bigger */
@@ -31,7 +31,7 @@
     .card:hover { transform: translateY(-10px); border-color: #1abc9c; }
     .card h3 { color: #f1c40f; margin: 0 0 10px 0; }
     
-.card img {
+    .card img {
       width: 100%;       
       height: 320px;      /* 👈 Increased from 250px to 320px so the image takes up most of the card */
       object-fit: cover;  
@@ -83,6 +83,7 @@
   <h1>My Dream Travel Destinations</h1>
   <p>I love exploring new places and experiencing different cultures.</p>
   
+  <!-- ================= MYANMAR SECTION ================= -->
   <h2>Places I've Visited in Myanmar 🇲🇲</h2>
 
   <div class="card-container">
@@ -104,6 +105,21 @@
     </div>
 
   </div> 
+
+  <!-- ================= THAILAND SECTION (အသစ်ထည့်ထားသောအပိုင်း) ================= -->
+  <h2>Places I've Visited in Thailand 🇹🇭</h2>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="bangkok.jpg" alt="Bangkok" style="cursor:pointer;">
+      <div class="card-text" onclick="openModal('Bangkok Trip', 'ထိုင်းနိုင်ငံ ဘန်ကောက်မြို့ရဲ့ လှပဆန်းသစ်တဲ့ မြို့ပြအလှအပတွေနဲ့ အစားအသောက်တွေကို သွားရောက်လည်ပတ် ခံစားခဲ့ရပါတယ်။')" style="cursor:pointer; padding: 15px 10px;">
+        <h3>Bangkok</h3>
+        <p>I have traveled in Thailand! Next stop: Bangkok! ✈️✨</p>
+      </div>
+    </div>
+
+  </div>
 
   <button id="myButton">လျှို့ဝှက်ချက်ကို နှိပ်ကြည့်ပါ</button>
 
